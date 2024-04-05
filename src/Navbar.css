@@ -1,0 +1,44 @@
+/* navbar.css */
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s; /* Add transition effect for smoother hover */
+  font-family: 'Garamond', serif;
+}
+
+.nav-link:hover {
+  transform: translateY(-5px); /* Move the text 5px upwards on hover */
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items vertically */
+  }
+
+  .nav-item {
+    margin-right: 0; /* Remove margin between items */
+    margin-bottom: 10px; /* Add space between items vertically */
+  }
+}

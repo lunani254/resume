@@ -1,0 +1,15 @@
+.TechItem{
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items vertically */
+    }
+  
+    .nav-item {
+      margin-right: 0; /* Remove margin between items */
+      margin-bottom: 10px; /* Add space between items vertically */
+    }
+  }

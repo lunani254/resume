@@ -1,0 +1,24 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 25px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Garamond', serif;
+  border-radius: 5px;
+}
+p{
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 30px;
+    font-size: 14px; 
+  }
+}
+li {
+  display: inline;
+  margin-right: 30px;
+}
