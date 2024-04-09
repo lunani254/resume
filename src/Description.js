@@ -11,7 +11,8 @@ function Description() {
         <p> Hi, I'm Victor Lunani, Passionate about database administration and front-end development based in Nairobi, Kenya.</p>
       </div>
       <div className="description-image">
-          <img src={profileImage}/>
+      <img src={profileImage} alt="Profile"/>
+  
         <ul className='social-media'>
           <div>
           <li><a href="https://www.instagram.com/vikings_vic/" target="_blank" rel="noopener noreferrer">
