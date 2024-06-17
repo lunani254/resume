@@ -1,22 +1,43 @@
-import React from 'react';
-import './Footer.css'; // Import CSS for styling
-import { FaWhatsapp } from "react-icons/fa";
-import { IoCall } from "react-icons/io5";
+// Footer.js
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
 function Footer() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
-    <footer className="footer">
-      <div className="contacts">
-      <h2>contact me</h2>
-      <ul>
-       <li><a href="https://wa.link/vyhv5s" target='_blank' rel="noopener noreferrer">
-          <FaWhatsapp />
-        </a>
-        <li><a href="tel:+254768016771" target='_blank' rel="noopener noreferrer"><IoCall /></a></li>
-        </li>
-        </ul>
+    <footer className={`footer ${isVisible ? 'show' : ''}`} id="footer">
+      <div className="footer-content">
+        <div className="footer tittle">
+            <p>Get In Touch</p>
         </div>
-      <p>&copy; 2024 My Website. All Rights Reserved.</p>
+        <div className="contact-icons">
+          <a href="https://wa.me/254768016771" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </a>
+          <a href="tel:+254768016771">
+            <FontAwesomeIcon icon={faPhoneAlt} />
+          </a>
+        </div>
+        <p>&copy; 2024 Lunani Victor. All rights reserved.</p>
+      </div>
     </footer>
   );
 }
