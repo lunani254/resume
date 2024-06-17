@@ -1,11 +1,11 @@
 
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar';
-import Description from './Description';
-import Tech from './Tech';
-import Portfolio from './Portfolio';
-import Footer from './Footer';
+import Navbar from './components/Navbar';
+import Description from './components/Description';
+import Tech from './components/Tech';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   return (
