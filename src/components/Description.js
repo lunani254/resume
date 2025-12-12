@@ -8,7 +8,7 @@ function Description() {
     <div className="description-container">
       <div className="description-text">
         <h2>FULL STACK DEVELOPER</h2>
-        <p>Hi, I'm Victor Lunani, a passionate database administrator and front-end developer based in Nairobi, Kenya. With a keen eye for detail and a drive for excellence, I specialize in creating robust database solutions and engaging, user-friendly web interfaces. My expertise extends to Android, iOS, and web development, ensuring a seamless experience across all platforms.</p>
+        <p>Hi, I'm Victor Lunani,Tech Enthusiast and a passionate database administrator and front-end developer based in Nairobi, Kenya. With a keen eye for detail and a drive for excellence, I specialize in creating robust database solutions and engaging, user-friendly web interfaces. My expertise extends to Android, iOS, and web development, ensuring a seamless experience across all platforms.</p>
         <div className="description-buttons">
           <a href="/fullStackDeveloperVictor.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">My Resume</a>
           <a href="mailto:lunanivictor06@gmail.com" className="hire-me-button">Hire Me</a>
